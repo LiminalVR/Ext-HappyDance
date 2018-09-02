@@ -34,3 +34,5 @@ https://www.mixamo.com
 Characters = 
 Mixamo
 https://www.mixamo.com
+
+Using Unity 2018.2.6f1 (64-bit)
