@@ -1,5 +1,7 @@
 # Happy_Dance_Liminal
 
+Using Unity 2018.2.6f1 (64-bit)
+
 Audio - 
 
 DANCE | ROYALTY FREE MUSIC
@@ -31,8 +33,15 @@ Animations -
 Mixamo
 https://www.mixamo.com
 
-Characters = 
+Characters =
+
+(AJ, TY, Clair) 
 Mixamo
 https://www.mixamo.com
 
-Using Unity 2018.2.6f1 (64-bit)
+Mobile - Toy Story Smash It - Alien
+https://www.models-resource.com/mobile/toystorysmashit/model/16898/
+
+Unity asset store
+Skybox Volume 2 (Nebula)
+
