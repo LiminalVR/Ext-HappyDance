@@ -34,8 +34,11 @@ using UnityEditor;
 /// Configuration data for Oculus virtual reality.
 /// </summary>
 public class OVRManager : MonoBehaviour
+
 {
-	public enum TrackingOrigin
+
+
+    public enum TrackingOrigin
 	{
 		EyeLevel   = OVRPlugin.TrackingOrigin.EyeLevel,
 		FloorLevel = OVRPlugin.TrackingOrigin.FloorLevel,
@@ -56,10 +59,12 @@ public class OVRManager : MonoBehaviour
 		LMSHigh = OVRPlugin.TiledMultiResLevel.LMSHigh,
 	}
 
-	/// <summary>
-	/// Gets the singleton instance.
-	/// </summary>
-	public static OVRManager instance { get; private set; }
+
+
+    /// <summary>
+    /// Gets the singleton instance.
+    /// </summary>
+    public static OVRManager instance { get; private set; }
 
 	/// <summary>
 	/// Gets a reference to the active display.

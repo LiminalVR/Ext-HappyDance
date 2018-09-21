@@ -234,11 +234,17 @@ public class OVRGazePointer : MonoBehaviour {
             transform.rotation = newRot;
         }
 
-        Quaternion iconRotation = gazeIcon.rotation;
-		iconRotation.SetLookRotation(transform.rotation * new Vector3(0, 0, 1));
-		gazeIcon.rotation = iconRotation;
+        //Removed due to ERROR
+        //****************************************************************************************************
+        //****************************************************************************************************
+        //****************************************************************************************************
+        //****************************************************************************************************
+        //****************************************************************************************************
+  //      Quaternion iconRotation = gazeIcon.rotation;
+		//iconRotation.SetLookRotation(transform.rotation * new Vector3(0, 0, 1));
+		//gazeIcon.rotation = iconRotation;
 
-		positionSetsThisFrame = 0;
+		//positionSetsThisFrame = 0;
     }
 
     /// <summary>
