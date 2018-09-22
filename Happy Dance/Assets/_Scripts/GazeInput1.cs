@@ -12,6 +12,8 @@ public class GazeInput1 : MonoBehaviour
 
     public GameObject objectToActivate;
 
+    public GameObject objectToDestroy;
+
     // Use this for initialization
     void Start()
     {
@@ -40,6 +42,8 @@ public class GazeInput1 : MonoBehaviour
 
 
         StartCoroutine(ActivationRoutine());
+
+        Destroy(objectToDestroy);
 
         Invoke("ChangeLevel", 4.0f);
 
