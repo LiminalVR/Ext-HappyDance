@@ -14,6 +14,10 @@ public class GazeInput2 : MonoBehaviour
 
     public GameObject objectToDestroy;
 
+    public GameObject objectToDestroy2;
+
+
+
     // Use this for initialization
     void Start()
     {
@@ -44,6 +48,8 @@ public class GazeInput2 : MonoBehaviour
         StartCoroutine(ActivationRoutine());
 
         Destroy(objectToDestroy);
+
+        Destroy(objectToDestroy2);
 
         Invoke("ChangeLevel", 4.0f);
 

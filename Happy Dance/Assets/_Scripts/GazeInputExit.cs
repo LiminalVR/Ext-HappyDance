@@ -10,6 +10,7 @@ public class GazeInputExit : MonoBehaviour
 
     public GameObject objectToActivate;
 
+
     // Use this for initialization
     void Start()
     {
@@ -68,7 +69,7 @@ public class GazeInputExit : MonoBehaviour
 
     IEnumerator Quit()
     {
-        yield return new WaitForSeconds(5);
+        yield return new WaitForSeconds(3);
         Application.Quit();
 
     }
