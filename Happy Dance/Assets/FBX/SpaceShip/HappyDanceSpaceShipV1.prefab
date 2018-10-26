@@ -9,45 +9,44 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1575174571028072}
+  m_RootGameObject: {fileID: 1205297717145828}
   m_IsPrefabAsset: 1
---- !u!1 &1575174571028072
+--- !u!1 &1205297717145828
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 4142030493799766}
-  - component: {fileID: 33183008509233804}
-  - component: {fileID: 23507202398043412}
-  - component: {fileID: 136394659124647362}
+  - component: {fileID: 4311797350912498}
+  - component: {fileID: 33897346120178024}
+  - component: {fileID: 23588038420878324}
   m_Layer: 0
-  m_Name: GirlBeam
+  m_Name: HappyDanceSpaceShipV1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4142030493799766
+--- !u!4 &4311797350912498
 Transform:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1575174571028072}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -6.04, y: 28.6, z: 2.9}
-  m_LocalScale: {x: 1.75, y: 30, z: 1.75}
+  m_GameObject: {fileID: 1205297717145828}
+  m_LocalRotation: {x: -0.286892, y: 0.64629173, z: 0.64629173, w: 0.286892}
+  m_LocalPosition: {x: 1.1, y: 52.4, z: 0.9}
+  m_LocalScale: {x: 500, y: 900, z: 100}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!23 &23507202398043412
+  m_LocalEulerAnglesHint: {x: -90.00001, y: 0, z: 132.127}
+--- !u!23 &23588038420878324
 MeshRenderer:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1575174571028072}
+  m_GameObject: {fileID: 1205297717145828}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -57,7 +56,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: 459c4a1c0a521d646b08488fb681f3d6, type: 2}
+  - {fileID: 2100000, guid: 9cd0668af9fc4fe49b93e025823efbf5, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -77,23 +76,10 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!33 &33183008509233804
+--- !u!33 &33897346120178024
 MeshFilter:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1575174571028072}
-  m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
---- !u!136 &136394659124647362
-CapsuleCollider:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1575174571028072}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.5000001
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
+  m_GameObject: {fileID: 1205297717145828}
+  m_Mesh: {fileID: 4300000, guid: 3b7008b93f4796643ac2298933c0a5a5, type: 3}
