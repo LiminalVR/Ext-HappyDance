@@ -4858,7 +4858,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1840145737}
   - component: {fileID: 1840145736}
+  - component: {fileID: 1840145746}
   - component: {fileID: 1840145738}
+  - component: {fileID: 1840145745}
   - component: {fileID: 1840145741}
   - component: {fileID: 1840145740}
   - component: {fileID: 1840145739}
@@ -4989,6 +4991,32 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timer: 130
   objectToActivate: {fileID: 506136926}
+--- !u!114 &1840145745
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1840145735}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 75a6e755fd90db84898391def923ba8f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timer: 60
+  objectToActivate: {fileID: 279987452}
+--- !u!114 &1840145746
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1840145735}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 75a6e755fd90db84898391def923ba8f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timer: 30
+  objectToActivate: {fileID: 1571427630}
 --- !u!1 &1847994033
 GameObject:
   m_ObjectHideFlags: 0
