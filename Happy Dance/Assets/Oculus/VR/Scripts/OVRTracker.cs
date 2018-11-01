@@ -24,8 +24,6 @@ using System.Runtime.InteropServices;
 using UnityEngine;
 using VR = UnityEngine.VR;
 
-
-
 /// <summary>
 /// An infrared camera that tracks the position of a head-mounted display.
 /// </summary>
@@ -50,13 +48,10 @@ public class OVRTracker
 		public Vector2 fov;
 	}
 
-
-
-
-    /// <summary>
-    /// If true, a sensor is attached to the system.
-    /// </summary>
-    public bool isPresent
+	/// <summary>
+	/// If true, a sensor is attached to the system.
+	/// </summary>
+	public bool isPresent
 	{
 		get {
 			if (!OVRManager.isHmdPresent)
