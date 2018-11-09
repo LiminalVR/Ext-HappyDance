@@ -29,7 +29,7 @@ public class Menu2_ButtonLoad_DanceLevel : MonoBehaviour
 
     {
 
-        SceneManager.LoadScene("HappyDance_002");
+        SceneManager.LoadScene("PointerTesterV1");
 
     }
 

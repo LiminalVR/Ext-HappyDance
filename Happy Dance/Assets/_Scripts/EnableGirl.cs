@@ -17,7 +17,7 @@ using UnityEngine;
         StartCoroutine(ActivationRoutine());
         }
 
-        private IEnumerator ActivationRoutine()
+        public IEnumerator ActivationRoutine()
         {
             //Wait for 14 secs.
             yield return new WaitForSeconds(timer);
