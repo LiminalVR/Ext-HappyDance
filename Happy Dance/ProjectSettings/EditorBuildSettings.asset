@@ -8,13 +8,16 @@ EditorBuildSettings:
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
-  - enabled: 1
+  - enabled: 0
     path: Assets/_Scenes/Menu_V2.unity
     guid: f3fb89b3c866f7f4dbb80d96ee1445aa
-  - enabled: 1
+  - enabled: 0
     path: Assets/_Scenes/PointerTesterV1.unity
     guid: e7e10cd17dd753241bda9b98fd3f334e
   - enabled: 0
     path: Assets/_Scenes/HappyDance_002.unity
     guid: 4b52dfcde3e6acf419adbd54eb34a33b
+  - enabled: 1
+    path: Assets/Oculus/VR/Scenes/Room.unity
+    guid: 54445976c1dbf1c49bb38ba7eba558e8
   m_configObjects: {}
