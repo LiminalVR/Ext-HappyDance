@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Balloon
   - Destroy
+  - Floor
   layers:
   - Default
   - TransparentFX

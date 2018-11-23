@@ -38,7 +38,7 @@ public class DestroyEnemyWithBalloon : MonoBehaviour
 
 			audiosource.PlayOneShot (sound, 0.1f);
 
-			Destroy (other.gameObject);
+			Destroy (other.gameObject, 3.0f);
 		}
 
 	}
