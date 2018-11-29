@@ -29,6 +29,8 @@ public class RandomSpawner_Target : MonoBehaviour
 
 	{
 
+		//if key pushed initialise spawn function - testing
+
 		if(Input.GetKey(KeyCode.Q))
 				
 				spawnObject ();	
@@ -38,6 +40,7 @@ public class RandomSpawner_Target : MonoBehaviour
 	public void spawnObject()
 
 	{
+		//Randomly select an object from the array and spawn it
 		
 		randomGameObject = Random.Range (0, 5);
 
@@ -49,6 +52,8 @@ public class RandomSpawner_Target : MonoBehaviour
 
 
 	}
+
+	//show in game - editor only area of spawn
 
 	void OnDrawGizmosSelected()
 

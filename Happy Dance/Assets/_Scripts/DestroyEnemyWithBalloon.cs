@@ -9,6 +9,10 @@ public class DestroyEnemyWithBalloon : MonoBehaviour
 	public AudioClip sound;
 	AudioSource audiosource;
 
+	public int timeDelay = 2;
+
+	public bool alreadyPlayed = false;
+
 
 	// Use this for initialization
 	void Start () 
@@ -24,7 +28,7 @@ public class DestroyEnemyWithBalloon : MonoBehaviour
 
 	{
 
-
+		alreadyPlayed = false;
 
 	}
 
@@ -35,12 +39,37 @@ public class DestroyEnemyWithBalloon : MonoBehaviour
 		if (other.gameObject.tag == "Destroy") 
 		
 		{
+			
 
-			audiosource.PlayOneShot (sound, 0.1f);
+			StartCoroutine (playAudiowithDelay ());
 
-			Destroy (other.gameObject, 3.0f);
+			Destroy (other.gameObject, 1.0f);
+
 		}
 
 	}
+
+	IEnumerator playAudiowithDelay ()
+
+	{
+	
+		if(!alreadyPlayed)
+		
+		{
+
+			yield return new WaitForSeconds(timeDelay);
+
+			audiosource.PlayOneShot (sound, 0.1f);
+
+			alreadyPlayed = true;
+
+
+			
+	    }
+
+
+    }
+
+
 }
 
