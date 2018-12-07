@@ -17,7 +17,7 @@ namespace VRStandardAssets.ShootingGallery
         [SerializeField] private int m_Score = 1;                       // This is the amount added to the users score when the target is hit.
         [SerializeField] private float m_TimeOutDuration = 2f;          // How long the target lasts before it disappears.
         [SerializeField] private float m_DestroyTimeOutDuration = 2f;   // When the target is hit, it shatters.  This is how long before the shattered pieces disappear.
-        [SerializeField] private GameObject m_DestroyPrefab;            // The prefab for the shattered target.
+		[SerializeField] private GameObject m_DestroyPrefab;            // The prefab for the shattered target.
         [SerializeField] private AudioClip m_DestroyClip;               // The audio clip to play when the target shatters.
         [SerializeField] private AudioClip m_SpawnClip;                 // The audio clip that plays when the target appears.
         [SerializeField] private AudioClip m_MissedClip;                // The audio clip that plays when the target disappears without being hit.
