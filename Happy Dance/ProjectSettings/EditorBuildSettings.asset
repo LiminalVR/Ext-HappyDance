@@ -8,4 +8,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/_Scenes/HappyDance_002.unity
     guid: 4b52dfcde3e6acf419adbd54eb34a33b
+  - enabled: 1
+    path: Assets/_Scenes/Outro.unity
+    guid: 0e9a0468e52b43a41845475500888f99
   m_configObjects: {}

@@ -279,7 +279,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: -410}
-  m_SizeDelta: {x: 300, y: 100}
+  m_SizeDelta: {x: 600, y: 300}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &325282802
 MonoBehaviour:
@@ -295,7 +295,7 @@ MonoBehaviour:
   DoNotTesselate: 0
   savedPos: {x: 0, y: 0, z: 0}
   savedUp: {x: 0, y: 1, z: 0}
-  savedRectSize: {x: 300, y: 100}
+  savedRectSize: {x: 600, y: 300}
   savedColor: {r: 1, g: 1, b: 1, a: 1}
   savedTextUV0: {x: 0, y: 0}
   savedFill: 1
@@ -572,6 +572,7 @@ GameObject:
   - component: {fileID: 411255255}
   - component: {fileID: 411255254}
   - component: {fileID: 411255253}
+  - component: {fileID: 411255256}
   m_Layer: 5
   m_Name: Title_Welcome to
   m_TagString: Untagged
@@ -594,7 +595,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 109}
+  m_AnchoredPosition: {x: 0, y: 284}
   m_SizeDelta: {x: 1137, y: 800}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &411255253
@@ -644,10 +645,10 @@ MonoBehaviour:
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
-    m_HorizontalOverflow: 0
+    m_HorizontalOverflow: 1
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: ' Welcome to
+  m_Text: ' We hope you enjoyed
 
 
 '
@@ -658,6 +659,20 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 411255251}
   m_CullTransparentMesh: 0
+--- !u!114 &411255256
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 411255251}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1573420865, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5}
+  m_EffectDistance: {x: 2, y: -2}
+  m_UseGraphicAlpha: 1
 --- !u!1 &584321544
 GameObject:
   m_ObjectHideFlags: 0
@@ -708,7 +723,7 @@ MonoBehaviour:
   DoNotTesselate: 0
   savedPos: {x: 0, y: 0, z: 0}
   savedUp: {x: 0, y: 1, z: 0}
-  savedRectSize: {x: 2000, y: 1000}
+  savedRectSize: {x: 6000, y: 3000}
   savedColor: {r: 1, g: 1, b: 1, a: 1}
   savedTextUV0: {x: 0, y: 0}
   savedFill: 1
@@ -1431,6 +1446,7 @@ GameObject:
   - component: {fileID: 830992405}
   - component: {fileID: 830992404}
   - component: {fileID: 830992403}
+  - component: {fileID: 830992406}
   m_Layer: 5
   m_Name: Title_HappyDance
   m_TagString: Untagged
@@ -1453,7 +1469,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 353}
+  m_AnchoredPosition: {x: 0, y: 428}
   m_SizeDelta: {x: 1137, y: 800}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &830992403
@@ -1503,7 +1519,7 @@ MonoBehaviour:
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
-    m_HorizontalOverflow: 0
+    m_HorizontalOverflow: 1
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: '
@@ -1518,6 +1534,20 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 830992401}
   m_CullTransparentMesh: 0
+--- !u!114 &830992406
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 830992401}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1573420865, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5}
+  m_EffectDistance: {x: 2, y: -2}
+  m_UseGraphicAlpha: 1
 --- !u!1 &943104639
 GameObject:
   m_ObjectHideFlags: 0
@@ -3010,7 +3040,7 @@ MonoBehaviour:
   DoNotTesselate: 0
   savedPos: {x: 0, y: 0, z: 0}
   savedUp: {x: 0, y: 1, z: 0}
-  savedRectSize: {x: 2000, y: 1000}
+  savedRectSize: {x: 6000, y: 3000}
   savedColor: {r: 1, g: 1, b: 1, a: 1}
   savedTextUV0: {x: 0, y: 0}
   savedFill: 1
@@ -3360,7 +3390,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -340}
+  m_AnchoredPosition: {x: 0, y: -345}
   m_SizeDelta: {x: 1261, y: 650}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1379642654
@@ -3379,7 +3409,7 @@ MonoBehaviour:
   savedUp: {x: 0, y: 1, z: 0}
   savedRectSize: {x: 1261, y: 650}
   savedColor: {r: 1, g: 0.995283, b: 0.995283, a: 1}
-  savedTextUV0: {x: 0, y: 0.18359375}
+  savedTextUV0: {x: 0.33398438, y: 0.5}
   savedFill: 0
 --- !u!114 &1379642655
 MonoBehaviour:
@@ -3401,20 +3431,21 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 60
+    m_Font: {fileID: 12800000, guid: 3a4add7cd3732284c9418694424e6e06, type: 3}
+    m_FontSize: 200
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 2
-    m_MaxSize: 70
+    m_MinSize: 1
+    m_MaxSize: 200
     m_Alignment: 1
     m_AlignByGeometry: 0
     m_RichText: 1
-    m_HorizontalOverflow: 0
+    m_HorizontalOverflow: 1
     m_VerticalOverflow: 0
     m_LineSpacing: 1.5
-  m_Text: "Using the Trigger on the controller\nselect the button below \nto start
-    the Experience"
+  m_Text: 'Have a Great Day
+
+'
 --- !u!222 &1379642656
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3433,6 +3464,7 @@ GameObject:
   - component: {fileID: 1532714375}
   - component: {fileID: 1532714374}
   - component: {fileID: 1532714373}
+  - component: {fileID: 1532714376}
   m_Layer: 5
   m_Name: Text
   m_TagString: Untagged
@@ -3472,9 +3504,9 @@ MonoBehaviour:
   DoNotTesselate: 0
   savedPos: {x: 0, y: 0, z: 0}
   savedUp: {x: 0, y: 1, z: 0}
-  savedRectSize: {x: 300, y: 100}
+  savedRectSize: {x: 600, y: 300}
   savedColor: {r: 0, g: 0, b: 0, a: 1}
-  savedTextUV0: {x: 0.5703125, y: 0.31640625}
+  savedTextUV0: {x: 0.20703125, y: 0.7519531}
   savedFill: 0
 --- !u!114 &1532714374
 MonoBehaviour:
@@ -3496,19 +3528,19 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 30
+    m_Font: {fileID: 12800000, guid: 3a4add7cd3732284c9418694424e6e06, type: 3}
+    m_FontSize: 250
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 2
-    m_MaxSize: 40
+    m_MinSize: 1
+    m_MaxSize: 250
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Continue
+  m_Text: Exit
 --- !u!222 &1532714375
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3516,6 +3548,20 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1532714371}
   m_CullTransparentMesh: 0
+--- !u!114 &1532714376
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1532714371}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1573420865, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5}
+  m_EffectDistance: {x: 2, y: -2}
+  m_UseGraphicAlpha: 1
 --- !u!1 &1582490479
 GameObject:
   m_ObjectHideFlags: 0
@@ -3619,7 +3665,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 2000, y: 1000}
+  m_SizeDelta: {x: 6000, y: 3000}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1584729991
 GameObject:
@@ -4139,7 +4185,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!64 &1994777524
 MeshCollider:
   m_ObjectHideFlags: 0
