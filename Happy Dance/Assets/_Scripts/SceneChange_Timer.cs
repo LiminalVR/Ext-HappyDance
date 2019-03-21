@@ -22,7 +22,7 @@ public class SceneChange_Timer : MonoBehaviour
 			yield return new WaitForSeconds(1);
 		} while (--secondsLeft > 0);
 
-		Application.LoadLevel("Outro");
+		Application.LoadLevel("Outro_V2");
 	}
 
 	void OnGUI()

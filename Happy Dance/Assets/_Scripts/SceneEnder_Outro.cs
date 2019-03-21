@@ -10,7 +10,7 @@ public class SceneEnder_Outro : MonoBehaviour
 
 	void Start()
 	{
-		StartCoroutine(DelayLoadLevel(10));
+		StartCoroutine(DelayLoadLevel(30));
 	}
 
 	IEnumerator DelayLoadLevel(float seconds)
@@ -25,8 +25,8 @@ public class SceneEnder_Outro : MonoBehaviour
 
 		while (--secondsLeft > 0);
 			
-
-		Application.LoadLevel("Menu_V3");
+		Application.Quit();
+		//Application.LoadLevel("Menu_V3");
 	}
 		
 

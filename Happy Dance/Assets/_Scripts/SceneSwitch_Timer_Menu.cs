@@ -10,7 +10,7 @@ public class SceneSwitch_Timer_Menu : MonoBehaviour
 
 	void Start()
 	{
-		StartCoroutine(DelayLoadLevel(10));
+		StartCoroutine(DelayLoadLevel(15));
 	}
 
 	IEnumerator DelayLoadLevel(float seconds)
