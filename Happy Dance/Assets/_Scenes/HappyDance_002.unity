@@ -2152,7 +2152,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 7693b90f1ddd6df4ba94d282919e2fdd, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.3
+  m_Volume: 0.1
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -2164,8 +2164,8 @@ AudioSource:
   MaxDistance: 500
   Pan2D: 0
   rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
+  BypassEffects: 1
+  BypassListenerEffects: 1
   BypassReverbZones: 0
   rolloffCustomCurve:
     serializedVersion: 2
@@ -6002,6 +6002,7 @@ GameObject:
   - component: {fileID: 1798725535}
   - component: {fileID: 1798725534}
   - component: {fileID: 1798725533}
+  - component: {fileID: 1798725542}
   m_Layer: 0
   m_Name: EGO_PositiveAudioTimer
   m_TagString: Untagged
@@ -6021,7 +6022,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timer: 110
-  beam: {fileID: 8300000, guid: 4079af4e8e0dca945bf4fa15453ab910, type: 3}
+  beam: {fileID: 8300000, guid: 74c36358bc9af4e4a9136c0ae775e68c, type: 3}
+  audioSource: {fileID: 0}
 --- !u!114 &1798725525
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6034,7 +6036,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timer: 91
-  beam: {fileID: 8300000, guid: a4de5a88c4b46cb47a1a0929352f2573, type: 3}
+  beam: {fileID: 8300000, guid: bd111fd7460d86d45994f01f929482c9, type: 3}
+  audioSource: {fileID: 0}
 --- !u!114 &1798725526
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6047,7 +6050,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timer: 85
-  beam: {fileID: 8300000, guid: bf183df8b567a40439b2c1f34e671629, type: 3}
+  beam: {fileID: 8300000, guid: aa829583bfc2564479b956cfc0cf9ef6, type: 3}
+  audioSource: {fileID: 0}
 --- !u!114 &1798725527
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6060,7 +6064,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timer: 72
-  beam: {fileID: 8300000, guid: cd47c906c52ee994a98a6b54c9b426ae, type: 3}
+  beam: {fileID: 8300000, guid: 0932e9964a410e4439cbf9be63b3edda, type: 3}
+  audioSource: {fileID: 0}
 --- !u!114 &1798725528
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6073,7 +6078,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timer: 55
-  beam: {fileID: 8300000, guid: 44808f969d95367469136451f4905948, type: 3}
+  beam: {fileID: 8300000, guid: d3c91e79bb6936149a9f1de60ddfb520, type: 3}
+  audioSource: {fileID: 0}
 --- !u!114 &1798725529
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6086,7 +6092,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timer: 36
-  beam: {fileID: 8300000, guid: 5e6fc94250570fc40948bfcf09f52178, type: 3}
+  beam: {fileID: 8300000, guid: faec02fb3d38dfa4e9e736767cef871a, type: 3}
+  audioSource: {fileID: 1798725542}
 --- !u!114 &1798725530
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6099,7 +6106,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timer: 18
-  beam: {fileID: 8300000, guid: e778280b9a8a5a04f9d26d737f411c92, type: 3}
+  beam: {fileID: 8300000, guid: 9892604d2fa2da54f974fd9676bd68ca, type: 3}
+  audioSource: {fileID: 1798725542}
 --- !u!114 &1798725531
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6112,7 +6120,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timer: 10
-  beam: {fileID: 8300000, guid: 4079af4e8e0dca945bf4fa15453ab910, type: 3}
+  beam: {fileID: 8300000, guid: ea3245b6cd1747d4898206929ccc5b83, type: 3}
+  audioSource: {fileID: 1798725542}
 --- !u!4 &1798725532
 Transform:
   m_ObjectHideFlags: 0
@@ -6138,7 +6147,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timer: 225
-  beam: {fileID: 8300000, guid: e778280b9a8a5a04f9d26d737f411c92, type: 3}
+  beam: {fileID: 8300000, guid: cd2841ac91474464f849ca46ab05b5ee, type: 3}
+  audioSource: {fileID: 0}
 --- !u!114 &1798725534
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6151,7 +6161,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timer: 215
-  beam: {fileID: 8300000, guid: 5e6fc94250570fc40948bfcf09f52178, type: 3}
+  beam: {fileID: 8300000, guid: 0331e0f609ea4244bb07c964f8fb4669, type: 3}
+  audioSource: {fileID: 0}
 --- !u!114 &1798725535
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6164,7 +6175,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timer: 210
-  beam: {fileID: 8300000, guid: bf183df8b567a40439b2c1f34e671629, type: 3}
+  beam: {fileID: 8300000, guid: 8c8c83b53b4b52249a4ae0da0f6cbf05, type: 3}
+  audioSource: {fileID: 0}
 --- !u!114 &1798725536
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6177,7 +6189,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timer: 200
-  beam: {fileID: 8300000, guid: cd47c906c52ee994a98a6b54c9b426ae, type: 3}
+  beam: {fileID: 8300000, guid: 74c36358bc9af4e4a9136c0ae775e68c, type: 3}
+  audioSource: {fileID: 0}
 --- !u!114 &1798725537
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6190,7 +6203,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timer: 180
-  beam: {fileID: 8300000, guid: bf183df8b567a40439b2c1f34e671629, type: 3}
+  beam: {fileID: 8300000, guid: 618191e67d55fb941a662d37ad189608, type: 3}
+  audioSource: {fileID: 0}
 --- !u!114 &1798725538
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6203,7 +6217,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timer: 167
-  beam: {fileID: 8300000, guid: cd47c906c52ee994a98a6b54c9b426ae, type: 3}
+  beam: {fileID: 8300000, guid: e457b10cfd78a784a9e2e5dc91ec7bf7, type: 3}
+  audioSource: {fileID: 0}
 --- !u!114 &1798725539
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6216,7 +6231,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timer: 155
-  beam: {fileID: 8300000, guid: 44808f969d95367469136451f4905948, type: 3}
+  beam: {fileID: 8300000, guid: 7701c7d2ec3028341af0e01f82d2b609, type: 3}
+  audioSource: {fileID: 0}
 --- !u!114 &1798725540
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6229,7 +6245,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timer: 135
-  beam: {fileID: 8300000, guid: 5e6fc94250570fc40948bfcf09f52178, type: 3}
+  beam: {fileID: 8300000, guid: cbf9cac351b08244288b0a982d715472, type: 3}
+  audioSource: {fileID: 0}
 --- !u!114 &1798725541
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6242,7 +6259,103 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timer: 130
-  beam: {fileID: 8300000, guid: e778280b9a8a5a04f9d26d737f411c92, type: 3}
+  beam: {fileID: 8300000, guid: 42e714b899531384790975cc8862ada4, type: 3}
+  audioSource: {fileID: 0}
+--- !u!82 &1798725542
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1798725523}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 2
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &1811447458
 GameObject:
   m_ObjectHideFlags: 0

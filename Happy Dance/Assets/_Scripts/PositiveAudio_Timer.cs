@@ -11,7 +11,8 @@ public class PositiveAudio_Timer : MonoBehaviour
 	//public GameObject objectToActivate;
 
 	public AudioClip beam;
-	AudioSource audioSource;
+	public AudioSource audioSource;
+
 
 	private void Start()
 	{
@@ -35,7 +36,7 @@ public class PositiveAudio_Timer : MonoBehaviour
 
 		//audioSource.PlayOneShot(beam, 1.0f);
 
-		AudioSource.PlayClipAtPoint(beam, new Vector3(5, 1, 2));
+		AudioSource.PlayClipAtPoint(beam, new Vector3(0, 0, 0));
 
 		//Turn the Game Oject back off after 1 sec.
 		// yield return new WaitForSeconds(1);
