@@ -196,7 +196,7 @@ MonoBehaviour:
   savedUp: {x: 0, y: 1, z: 0}
   savedRectSize: {x: 1880, y: 100}
   savedColor: {r: 1, g: 1, b: 1, a: 1}
-  savedTextUV0: {x: 0.23046875, y: 0}
+  savedTextUV0: {x: 0.796875, y: 0.20507812}
   savedFill: 0
 --- !u!114 &92848022
 MonoBehaviour:
@@ -333,7 +333,7 @@ MonoBehaviour:
   savedUp: {x: 0, y: 1, z: 0}
   savedRectSize: {x: 1880, y: 100}
   savedColor: {r: 1, g: 1, b: 1, a: 1}
-  savedTextUV0: {x: 0, y: 0.39453125}
+  savedTextUV0: {x: 0.65234375, y: 0.3984375}
   savedFill: 0
 --- !u!114 &161527859
 MonoBehaviour:
@@ -1078,7 +1078,7 @@ MonoBehaviour:
   savedUp: {x: 0, y: 1, z: 0}
   savedRectSize: {x: 1880, y: 100}
   savedColor: {r: 1, g: 1, b: 1, a: 1}
-  savedTextUV0: {x: 0.25390625, y: 0.08203125}
+  savedTextUV0: {x: 0.85546875, y: 0}
   savedFill: 0
 --- !u!114 &657755043
 MonoBehaviour:
@@ -1264,7 +1264,7 @@ MonoBehaviour:
   savedUp: {x: 0, y: 1, z: 0}
   savedRectSize: {x: 1880, y: 100}
   savedColor: {r: 1, g: 1, b: 1, a: 1}
-  savedTextUV0: {x: 0.2109375, y: 0.37890625}
+  savedTextUV0: {x: 0.078125, y: 0.25}
   savedFill: 0
 --- !u!114 &762495315
 MonoBehaviour:
@@ -1463,7 +1463,7 @@ MonoBehaviour:
   savedUp: {x: 0, y: 1, z: 0}
   savedRectSize: {x: 1880, y: 100}
   savedColor: {r: 1, g: 1, b: 1, a: 1}
-  savedTextUV0: {x: 0.5859375, y: 0.091796875}
+  savedTextUV0: {x: 0, y: 0.00390625}
   savedFill: 0
 --- !u!114 &890173528
 MonoBehaviour:
@@ -2712,9 +2712,9 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: cfb0ad378f4a4fb4291f02ffd8a4c913, type: 3}
+  m_audioClip: {fileID: 8300000, guid: ed31bb4d38c29f64b9b18d1ca5ec7679, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.5
+  m_Volume: 0.3
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -3468,7 +3468,7 @@ MonoBehaviour:
   savedUp: {x: 0, y: 1, z: 0}
   savedRectSize: {x: 1880, y: 100}
   savedColor: {r: 1, g: 1, b: 1, a: 1}
-  savedTextUV0: {x: 0.5078125, y: 0.16992188}
+  savedTextUV0: {x: 0.4765625, y: 0.3359375}
   savedFill: 0
 --- !u!114 &2070360263
 MonoBehaviour:
