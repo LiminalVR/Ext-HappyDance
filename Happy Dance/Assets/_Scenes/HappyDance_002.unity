@@ -2898,7 +2898,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: ca5e30ba86c5e1f41833c3b4a2646848, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.2
+  m_Volume: 0.15
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -7913,7 +7913,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timer: 180
-  beam: {fileID: 8300000, guid: 618191e67d55fb941a662d37ad189608, type: 3}
+  beam: {fileID: 8300000, guid: 8cb72c6b589bcd548873b41ead8ae6ef, type: 3}
   audioSource: {fileID: 0}
 --- !u!114 &1798725538
 MonoBehaviour:
