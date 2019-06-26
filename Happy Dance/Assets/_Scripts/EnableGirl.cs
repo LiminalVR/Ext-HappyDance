@@ -15,13 +15,16 @@ using UnityEngine;
 
         private void Start()
         {
+            if (objectToActivate != null)
+            {
+                objectToActivate.SetActive(false);
+            }
+        
+            StartCoroutine(ActivationRoutine());
 
-        objectToActivate.SetActive(false);
-        StartCoroutine(ActivationRoutine());
+            //audioSource = mainCamera.Find.GetComponent<AudioSource>();
 
-		//audioSource = mainCamera.Find.GetComponent<AudioSource>();
-
-		//AudioSource.PlayClipAtPoint(beam, new Vector3(5, 1, 2));
+            //AudioSource.PlayClipAtPoint(beam, new Vector3(5, 1, 2));
 
         }
 
@@ -30,13 +33,21 @@ using UnityEngine;
             //Wait for 14 secs.
             yield return new WaitForSeconds(timer);
 
+            if (objectToActivate != null)
+            {
+                objectToActivate.SetActive(true);
+            }
+
             //Turn My game object that is set to false(off) to True(on).
-            objectToActivate.SetActive(true);
+            
 
 		    //audioSource.PlayOneShot(beam, 1.0f);
 
-		    AudioSource.PlayClipAtPoint(beam, new Vector3(5, 1, 2));
-
+            if (beam != null)
+            {
+                AudioSource.PlayClipAtPoint(beam, new Vector3(5, 1, 2));
+            }
+            
             //Turn the Game Oject back off after 1 sec.
            // yield return new WaitForSeconds(1);
 
