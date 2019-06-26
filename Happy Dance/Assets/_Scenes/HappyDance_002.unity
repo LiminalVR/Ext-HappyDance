@@ -5748,7 +5748,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HandTransform: {fileID: 272495385}
-  CommentActivationTrigger: 0.1
+  CommentActivationMovementThreshold: 0.1
   PlayerPraiseOptions:
   - PraiseAudioClip: {fileID: 8300000, guid: 4041c273f9d710b42ad8c16556fa3d8c, type: 3}
     PraiseText: WELL DONE

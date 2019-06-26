@@ -12,7 +12,7 @@ public class PraiseController
     : MonoBehaviour
 {
     public Transform HandTransform;
-    public float CommentActivationTrigger;
+    public float CommentActivationMovementThreshold;
     [Space]
     public List<Praise> PlayerPraiseOptions;
     public List<SpeechBubble> SpeechBubbles;
@@ -21,38 +21,43 @@ public class PraiseController
     public bool Active;
 
     private Vector3 _cachedPos;
+    private Coroutine _praiseRoutine;
+
     void Start()
     {
         Assert.IsNotNull(HandTransform, "HandTransform must not be null!");
         _cachedPos = HandTransform.position;
+    }
 
-        StartCoroutine(PraiseCoro());
+    private void Update()
+    {
+        if (!Active)
+            return;
+
+        var handDelta = HandTransform.position - _cachedPos;
+
+        if (handDelta.magnitude > CommentActivationMovementThreshold && _praiseRoutine == null)
+        {
+            _praiseRoutine = StartCoroutine(PraiseCoro());
+        }
+
+        _cachedPos = HandTransform.position;
     }
 
     private IEnumerator PraiseCoro()
     {
-        while(Active)
-        {
-            var handDelta = HandTransform.position - _cachedPos;
+        var praise = PlayerPraiseOptions[Random.Range(0, PlayerPraiseOptions.Count)];
+        var praiseDisplay = SpeechBubbles[Random.Range(0, SpeechBubbles.Count)];
 
-            if (handDelta.magnitude > CommentActivationTrigger)
-            {
-                var praise = PlayerPraiseOptions[Random.Range(0, PlayerPraiseOptions.Count)];
-                var praiseDisplay = SpeechBubbles[Random.Range(0, SpeechBubbles.Count)];
+        praiseDisplay.DisplayGameObject.SetActive(true);
+        praiseDisplay.SetSpeechBubble(praise);
 
-                praiseDisplay.DisplayGameObject.SetActive(true);
-                praiseDisplay.SetSpeechBubble(praise);
+        yield return new WaitForSeconds(praise.PraiseAudioClip.length + 1f);
+        praiseDisplay.DisplayGameObject.SetActive(false);
 
-                yield return new WaitForSeconds(praise.PraiseAudioClip.length + 1f);
-                praiseDisplay.DisplayGameObject.SetActive(false);
+        yield return new WaitForSeconds(BasePraiseCooldown + Random.Range(CooldownRange.x, CooldownRange.y));
 
-                yield return new WaitForSeconds(BasePraiseCooldown + Random.Range(CooldownRange.x, CooldownRange.y));
-                
-            }
+        _praiseRoutine = null;
 
-            _cachedPos = HandTransform.position;
-
-            yield return new WaitForEndOfFrame();
-        }
     }
 }
