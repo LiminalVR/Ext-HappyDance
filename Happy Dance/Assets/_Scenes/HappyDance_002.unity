@@ -5789,8 +5789,8 @@ MonoBehaviour:
   - DisplayGameObject: {fileID: 561383345}
     DisplayText: {fileID: 1737804669}
     PraiseSource: {fileID: 561383348}
-  BasePraiseCooldown: 1
-  CooldownRange: {x: -0.1, y: 0.1}
+  BasePraiseCooldown: 2
+  CooldownRange: {x: -0.25, y: 0.25}
   Active: 1
 --- !u!1 &1965282698
 GameObject:
