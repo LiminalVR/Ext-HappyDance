@@ -1811,7 +1811,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_EmulatorDevice: 1
-  m_BuildDevice: 0
+  m_BuildDevice: 2
 --- !u!114 &523992820
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4801,25 +4801,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1654989734}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &1675251228 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1710596184378132, guid: e064c9eb3effcd24ab0f909fff4b5ac3,
-    type: 3}
-  m_PrefabInstance: {fileID: 1643083390}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1675251233
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1675251228}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ae00ba3c5b8f797438087c9ef983504b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  SecondsLeft: 0
 --- !u!1 &1675311138 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1575174571028072, guid: a7625bac1267d2b4fa00535e4a3361b8,
@@ -5767,7 +5748,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HandTransform: {fileID: 272495385}
-  CommentActivationTrigger: 0.05
+  CommentActivationTrigger: 0.1
   PlayerPraiseOptions:
   - PraiseAudioClip: {fileID: 8300000, guid: 4041c273f9d710b42ad8c16556fa3d8c, type: 3}
     PraiseText: WELL DONE

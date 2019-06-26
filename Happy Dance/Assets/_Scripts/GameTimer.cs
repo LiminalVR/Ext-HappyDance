@@ -9,21 +9,19 @@ public class GameTimer
     : MonoBehaviour
 {
     public float SecondsLeft = 0;
-    bool loadingStarted = false;
 
     void Start()
 	{
-		StartCoroutine(DelayLoadLevel(320));
+		StartCoroutine(TimerCoro());
 	}
 
-	IEnumerator DelayLoadLevel(float seconds)
+	IEnumerator TimerCoro()
 	{
-		SecondsLeft = seconds;
-		loadingStarted = true;
-		do
-		{
-			yield return new WaitForSeconds(1);
-		} while (--SecondsLeft > 0);
+        while (SecondsLeft > 0)
+        {
+            SecondsLeft -= Time.deltaTime;
+            yield return new WaitForEndOfFrame();
+        }
 
         ScreenFader.Instance.FadeToBlack(2);
         yield return new WaitForSeconds(2f);
@@ -33,7 +31,6 @@ public class GameTimer
 
 	void OnGUI()
 	{
-		if (loadingStarted)
-			GUI.Label(new Rect(0, 0, 100, 20), SecondsLeft.ToString());
+        GUI.Label(new Rect(0, 0, 100, 20), SecondsLeft.ToString("0"));
 	}
 }

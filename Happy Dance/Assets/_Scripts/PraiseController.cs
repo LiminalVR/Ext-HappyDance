@@ -33,10 +33,7 @@ public class PraiseController
     {
         while(Active)
         {
-            var position = HandTransform.position;
-            var handDelta = position - _cachedPos;
-
-            _cachedPos = position;
+            var handDelta = HandTransform.position - _cachedPos;
 
             if (handDelta.magnitude > CommentActivationTrigger)
             {
@@ -50,7 +47,10 @@ public class PraiseController
                 praiseDisplay.DisplayGameObject.SetActive(false);
 
                 yield return new WaitForSeconds(BasePraiseCooldown + Random.Range(CooldownRange.x, CooldownRange.y));
+                
             }
+
+            _cachedPos = HandTransform.position;
 
             yield return new WaitForEndOfFrame();
         }
