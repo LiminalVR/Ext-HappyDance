@@ -21,8 +21,8 @@ public class GameTimer
     void Start()
     {
         Assert.IsNotNull(PlayerDanceDetector, "PlayerDanceDetector must not be null");
-		StartCoroutine(TimerCoro());
-	}
+        StartCoroutine(TimerCoro());
+    }
 
 	IEnumerator TimerCoro()
 	{
