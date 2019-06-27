@@ -14,6 +14,7 @@ public class GameTimer
     : MonoBehaviour
 {
     public float SecondsLeft;
+    public float VolumeFadeSpeed;
     public DanceDetector PlayerDanceDetector;
     public PlayableDirector Director;
 
@@ -39,7 +40,17 @@ public class GameTimer
         yield return new WaitForSeconds((float) Director.duration + 0.1f);
 
         ScreenFader.Instance.FadeToBlack(2);
-        yield return new WaitForSeconds(2f);
+
+        // Used because the fade to black speed is always 2 seconds and the audio fade time may not be
+        var timeElapsed = 0f;
+        while (AudioListener.volume > 0f)
+        {
+            AudioListener.volume -= Time.deltaTime * VolumeFadeSpeed;
+            timeElapsed += Time.deltaTime;
+            yield return new WaitForEndOfFrame();
+        }
+
+        yield return new WaitForSeconds(2f - timeElapsed);
 
         ExperienceApp.End(true);
 	}

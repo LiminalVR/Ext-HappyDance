@@ -142,6 +142,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SecondsLeft: 300
+  VolumeFadeSpeed: 0.5
   PlayerDanceDetector: {fileID: 1958947223}
   Director: {fileID: 386558073}
 --- !u!4 &49885189
