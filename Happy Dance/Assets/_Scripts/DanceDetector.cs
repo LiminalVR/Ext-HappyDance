@@ -26,6 +26,7 @@ public class DanceDetector
     private Vector3 _cachedPos;
     private Coroutine _talkRoutine;
     private float _timeSinceGrossMovement;
+    private Speech _lastSpeechItem;
 
     void Start()
     {
@@ -63,13 +64,28 @@ public class DanceDetector
 
     private IEnumerator TalkRoutine(List<Speech> talkList)
     {
-        var praise = talkList[Random.Range(0, talkList.Count)];
+        var speechIndex = Random.Range(0, talkList.Count);
+        var loopCount = 0;
+
+        do
+        {
+            speechIndex = Random.Range(0, talkList.Count);
+            loopCount++;
+
+            if (loopCount > 100)
+                break;
+
+        } while (talkList[speechIndex] == _lastSpeechItem);
+
+        var speechItem = talkList[speechIndex];
+        _lastSpeechItem = speechItem;
+
         var praiseDisplay = SpeechBubbles[Random.Range(0, SpeechBubbles.Count)];
 
         praiseDisplay.DisplayGameObject.SetActive(true);
-        praiseDisplay.SetSpeechBubble(praise);
+        praiseDisplay.SetSpeechBubble(speechItem);
 
-        yield return new WaitForSeconds(praise.SpeechAudioClip.length + 0.1f);
+        yield return new WaitForSeconds(speechItem.SpeechAudioClip.length + 0.1f);
         praiseDisplay.DisplayGameObject.SetActive(false);
 
         yield return new WaitForSeconds(BaseTalkCooldown + Random.Range(CooldownRange.x, CooldownRange.y));
