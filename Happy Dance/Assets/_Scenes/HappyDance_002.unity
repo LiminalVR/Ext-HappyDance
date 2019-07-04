@@ -2200,7 +2200,7 @@ MonoBehaviour:
   m_Script: {fileID: 403216476, guid: a80148f7c24f27741a9721c40a216ac9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_AppData: {fileID: 4900000, guid: c82e02973d27bc84fb2a9c3b4fbcb179, type: 3}
+  m_AppData: {fileID: 4900000, guid: 16f18bbb3b6111b49b3bdc81bf704320, type: 3}
   m_AssetLookup: {fileID: 0}
   m_RootGameObjects:
   - {fileID: 0}
@@ -4715,6 +4715,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 523992821}
     m_Modifications:
+    - target: {fileID: 1205297717145828, guid: e83b5ab2da70242438781dbba95f6396, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4311797350912498, guid: e83b5ab2da70242438781dbba95f6396, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1.1
