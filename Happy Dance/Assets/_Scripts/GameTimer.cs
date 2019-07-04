@@ -54,9 +54,4 @@ public class GameTimer
 
         ExperienceApp.End(true);
 	}
-
-	void OnGUI()
-	{
-        GUI.Label(new Rect(0, 0, 100, 20), SecondsLeft.ToString("0"));
-	}
 }
