@@ -15,7 +15,7 @@ public class Fader
         Assert.IsNotNull(FaderMaterial, "FaderMaterial must not be null.");
     }
 
-    void Update()
+    private void Update()
     {
         FaderMaterial.SetColor("_Tint", Color);
     }

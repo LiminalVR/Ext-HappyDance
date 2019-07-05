@@ -28,7 +28,7 @@ public class DanceDetector
     private float _timeSinceGrossMovement;
     private Speech _lastSpeechItem;
 
-    void Start()
+    private void Start()
     {
         Assert.IsNotNull(HandTransform, "HandTransform must not be null!");
         _cachedPos = HandTransform.position;
@@ -91,6 +91,5 @@ public class DanceDetector
         yield return new WaitForSeconds(BaseTalkCooldown + Random.Range(CooldownRange.x, CooldownRange.y));
 
         _talkRoutine = null;
-
     }
 }
