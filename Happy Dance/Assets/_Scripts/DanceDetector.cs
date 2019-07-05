@@ -23,7 +23,7 @@ public class DanceDetector
     public Vector2 CooldownRange;
     public bool Active;
 
-    private Vector3 _cachedPos;
+    private Vector3 _cachedHandPos;
     private Coroutine _talkRoutine;
     private float _timeSinceGrossMovement;
     private Speech _lastSpeechItem;
@@ -31,7 +31,7 @@ public class DanceDetector
     private void Start()
     {
         Assert.IsNotNull(HandTransform, "HandTransform must not be null!");
-        _cachedPos = HandTransform.position;
+        _cachedHandPos = HandTransform.position;
         Active = true;
     }
 
@@ -40,7 +40,7 @@ public class DanceDetector
         if (!Active)
             return;
 
-        var handDelta = HandTransform.position - _cachedPos;
+        var handDelta = HandTransform.position - _cachedHandPos;
 
         if (_talkRoutine == null)
         {
@@ -55,11 +55,11 @@ public class DanceDetector
             if (_timeSinceGrossMovement > TimeBeforeEncouragement)
             {
                 _talkRoutine = StartCoroutine(TalkRoutine(PlayerEncouragementOptions));
-                    _timeSinceGrossMovement = 0;
+                _timeSinceGrossMovement = 0;
             }
         }
 
-        _cachedPos = HandTransform.position;
+        _cachedHandPos = HandTransform.position;
     }
 
     private IEnumerator TalkRoutine(List<Speech> talkList)
