@@ -6,6 +6,12 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/_Scenes/Menu_V3.unity
+    guid: 4140368ce005f2b449bdfbc856c69be6
+  - enabled: 1
     path: Assets/_Scenes/HappyDance_002.unity
     guid: 4b52dfcde3e6acf419adbd54eb34a33b
+  - enabled: 1
+    path: Assets/_Scenes/Outro_V2.unity
+    guid: 320d3e19659a88f48938944f504011f6
   m_configObjects: {}
