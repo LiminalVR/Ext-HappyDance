@@ -21,11 +21,6 @@ using UnityEngine;
             }
         
             StartCoroutine(ActivationRoutine());
-
-            //audioSource = mainCamera.Find.GetComponent<AudioSource>();
-
-            //AudioSource.PlayClipAtPoint(beam, new Vector3(5, 1, 2));
-
         }
 
         public IEnumerator ActivationRoutine()
