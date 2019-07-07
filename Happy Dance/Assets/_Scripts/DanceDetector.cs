@@ -42,24 +42,24 @@ public class DanceDetector
 
         var handDelta = HandTransform.position - _cachedHandPos;
 
-        if (_talkRoutine == null)
+        _cachedHandPos = HandTransform.position;
+
+        if (_talkRoutine != null)
+            return;
+
+        _timeSinceGrossMovement += Time.deltaTime;
+
+        if (handDelta.magnitude > CommentActivationMovementThreshold)
         {
-            _timeSinceGrossMovement += Time.deltaTime;
-
-            if (handDelta.magnitude > CommentActivationMovementThreshold)
-            {
-                _talkRoutine = StartCoroutine(TalkRoutine(PlayerPraiseOptions));
-                _timeSinceGrossMovement = 0;
-            }
-
-            if (_timeSinceGrossMovement > TimeBeforeEncouragement)
-            {
-                _talkRoutine = StartCoroutine(TalkRoutine(PlayerEncouragementOptions));
-                _timeSinceGrossMovement = 0;
-            }
+            _talkRoutine = StartCoroutine(TalkRoutine(PlayerPraiseOptions));
+            _timeSinceGrossMovement = 0;
         }
 
-        _cachedHandPos = HandTransform.position;
+        if (_timeSinceGrossMovement > TimeBeforeEncouragement)
+        {
+            _talkRoutine = StartCoroutine(TalkRoutine(PlayerEncouragementOptions));
+            _timeSinceGrossMovement = 0;
+        }
     }
 
     private IEnumerator TalkRoutine(List<Speech> talkList)
@@ -81,7 +81,6 @@ public class DanceDetector
         _lastSpeechItem = speechItem;
 
         var praiseDisplay = SpeechBubbles[Random.Range(0, SpeechBubbles.Count)];
-
         praiseDisplay.DisplayGameObject.SetActive(true);
         praiseDisplay.SetSpeechBubble(speechItem);
 

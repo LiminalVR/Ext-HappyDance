@@ -8,9 +8,9 @@ using Liminal.Core.Fader;
 using Liminal.SDK.Core;
 
 /// <summary>
-/// GameTimer is sued to control the ending of the happy dance experience.
+/// AppController is used to control the ending of the happy dance experience.
 /// </summary>
-public class GameTimer 
+public class AppController 
     : MonoBehaviour
 {
     public float SecondsLeft;
@@ -24,8 +24,8 @@ public class GameTimer
         StartCoroutine(TimerCoro());
     }
 
-	IEnumerator TimerCoro()
-	{
+    private IEnumerator TimerCoro()
+    {
         while (SecondsLeft > 0)
         {
             SecondsLeft -= Time.deltaTime;
@@ -53,5 +53,5 @@ public class GameTimer
         yield return new WaitForSeconds(2f - timeElapsed);
 
         ExperienceApp.End(true);
-	}
+    }
 }

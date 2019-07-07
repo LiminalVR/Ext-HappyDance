@@ -9,6 +9,7 @@ public class ControlLaserPointer
     : MonoBehaviour
 {
     public bool Enabled;
+
     private void Start()
     {
         var pointer = GetComponentInChildren<LaserPointerVisual>();

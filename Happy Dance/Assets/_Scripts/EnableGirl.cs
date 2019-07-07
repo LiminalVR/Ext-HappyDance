@@ -16,10 +16,8 @@ using UnityEngine;
         private void Start()
         {
             if (objectToActivate != null)
-            {
                 objectToActivate.SetActive(false);
-            }
-        
+
             StartCoroutine(ActivationRoutine());
         }
 
