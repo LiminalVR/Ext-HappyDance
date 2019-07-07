@@ -86,7 +86,6 @@ public class DanceDetector
 
         yield return new WaitForSeconds(speechItem.SpeechAudioClip.length + 0.1f);
         praiseDisplay.DisplayGameObject.SetActive(false);
-
         yield return new WaitForSeconds(BaseTalkCooldown + Random.Range(CooldownRange.x, CooldownRange.y));
 
         _talkRoutine = null;
