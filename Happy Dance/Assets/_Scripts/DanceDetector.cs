@@ -64,18 +64,15 @@ public class DanceDetector
 
     private IEnumerator TalkRoutine(List<Speech> talkList)
     {
-        var speechIndex = Random.Range(0, talkList.Count);
-        var loopCount = 0;
+        var speechIndex = 0;
 
-        do
+        for (var i = 0; i < 100; i++)
         {
             speechIndex = Random.Range(0, talkList.Count);
-            loopCount++;
 
-            if (loopCount > 100)
+            if(talkList[speechIndex] != _lastSpeechItem)
                 break;
-
-        } while (talkList[speechIndex] == _lastSpeechItem);
+        }
 
         var speechItem = talkList[speechIndex];
         _lastSpeechItem = speechItem;
