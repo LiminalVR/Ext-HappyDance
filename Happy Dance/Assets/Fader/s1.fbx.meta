@@ -1,16 +1,14 @@
 fileFormatVersion: 2
-guid: 3b7008b93f4796643ac2298933c0a5a5
+guid: c55fba511afe29a45a1301f0feafaecb
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
     100000: //RootNode
     400000: //RootNode
-    2100000: Material
-    2100002: Material.001
+    2100000: No Name
     2300000: //RootNode
     3300000: //RootNode
-    4300000: Cube
-    2186277476908879412: ImportLogs
+    4300000: Sphere
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -42,7 +40,7 @@ ModelImporter:
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: 1
+    globalScale: 100
     meshCompression: 0
     addColliders: 0
     useSRGBMaterialColor: 1
