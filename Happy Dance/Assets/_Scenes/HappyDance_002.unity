@@ -2585,9 +2585,11 @@ MonoBehaviour:
   m_Script: {fileID: 403216476, guid: a80148f7c24f27741a9721c40a216ac9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_AppData: {fileID: 0}
+  m_AppData: {fileID: 4900000, guid: 334c28d7c6de7964f8630b3acef0f96d, type: 3}
   m_AssetLookup: {fileID: 0}
-  m_RootGameObjects: []
+  m_RootGameObjects:
+  - {fileID: 0}
+  - {fileID: 523992818}
   m_FadeIn:
     m_Color: {r: 0, g: 0, b: 0, a: 1}
     m_Duration: 2
@@ -3042,6 +3044,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 897506796}
     m_Modifications:
+    - target: {fileID: 1260162970045296579, guid: 22276a8657744e04cba8ad0a2caf4195,
+        type: 3}
+      propertyPath: m_Name
+      value: VRAvatar
+      objectReference: {fileID: 0}
     - target: {fileID: 1260162969423114810, guid: 22276a8657744e04cba8ad0a2caf4195,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3096,11 +3103,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1260162970045296579, guid: 22276a8657744e04cba8ad0a2caf4195,
-        type: 3}
-      propertyPath: m_Name
-      value: VRAvatar
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 22276a8657744e04cba8ad0a2caf4195, type: 3}
