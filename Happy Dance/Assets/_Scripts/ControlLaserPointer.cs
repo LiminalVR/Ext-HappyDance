@@ -12,8 +12,8 @@ public class ControlLaserPointer
 
     private void Start()
     {
-        var pointer = GetComponentInChildren<LaserPointerVisual>();
-        var lineRend = GetComponentInChildren<LineRenderer>();
+        var pointer = GetComponentInChildren<LaserPointerVisual>(true);
+        var lineRend = GetComponentInChildren<LineRenderer>(true);
 
         pointer.enabled = Enabled;
         lineRend.enabled = Enabled;
