@@ -151,7 +151,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SecondsLeft: 300
   VolumeFadeSpeed: 0.5
-  PlayerDanceDetector: {fileID: 1958947223}
+  PlayerDanceDetector: {fileID: 897506797}
   Director: {fileID: 386558073}
 --- !u!4 &49885189
 Transform:
@@ -2572,7 +2572,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_EmulatorDevice: 1
-  m_BuildDevice: 0
+  m_BuildDevice: 2
 --- !u!114 &523992820
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2582,10 +2582,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 523992818}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 403216476, guid: a80148f7c24f27741a9721c40a216ac9, type: 3}
+  m_Script: {fileID: 11500000, guid: c2b9dd7c26c4d90429810d315deb2dd9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_AppData: {fileID: 4900000, guid: 334c28d7c6de7964f8630b3acef0f96d, type: 3}
+  m_AppData: {fileID: 4900000, guid: 84ad78dd5fae99c4d96e675f66f006ce, type: 3}
   m_AssetLookup: {fileID: 0}
   m_RootGameObjects:
   - {fileID: 0}
@@ -3110,6 +3110,11 @@ PrefabInstance:
     - target: {fileID: 1260162970045296578, guid: 22276a8657744e04cba8ad0a2caf4195,
         type: 3}
       propertyPath: m_ActivationPolicy
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1260162969591820546, guid: 22276a8657744e04cba8ad0a2caf4195,
+        type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -3906,6 +3911,7 @@ GameObject:
   m_Component:
   - component: {fileID: 897506796}
   - component: {fileID: 897506795}
+  - component: {fileID: 897506797}
   m_Layer: 0
   m_Name: EGO_StageRotation
   m_TagString: Untagged
@@ -3962,6 +3968,65 @@ Transform:
   m_Father: {fileID: 523992821}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &897506797
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 897506794}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fca1648b390c9b2479c7ffa9d0454022, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HandTransform: {fileID: 272495385}
+  CommentActivationMovementThreshold: 0.05
+  TimeBeforeEncouragement: 4
+  PlayerPraiseOptions:
+  - SpeechAudioClip: {fileID: 8300000, guid: 4041c273f9d710b42ad8c16556fa3d8c, type: 3}
+    SpeechText: WELL DONE
+  - SpeechAudioClip: {fileID: 8300000, guid: d7eb857567aebd84ba671c1cefbe816d, type: 3}
+    SpeechText: AMAZING MOVES
+  - SpeechAudioClip: {fileID: 8300000, guid: b2a1b34169c8b1e469edc0b4fa90257e, type: 3}
+    SpeechText: YOU'RE A FAST LEARNER
+  - SpeechAudioClip: {fileID: 8300000, guid: cf593997256e60c46ba4db2a0354414f, type: 3}
+    SpeechText: GREAT WORK
+  - SpeechAudioClip: {fileID: 8300000, guid: 1b8bccae9dffc6043a25c923e9c03b68, type: 3}
+    SpeechText: THAT'S IT, LET YOUR HAIR DOWN
+  - SpeechAudioClip: {fileID: 8300000, guid: 96c74ad29a1a27c4c9e240ac1883023a, type: 3}
+    SpeechText: OUTSTANDING
+  - SpeechAudioClip: {fileID: 8300000, guid: 9b75809fc4fab364db98dc4ee7913472, type: 3}
+    SpeechText: SHAKE THAT BOOTY
+  - SpeechAudioClip: {fileID: 8300000, guid: dde0f8cd96a1d434c919a8720d490805, type: 3}
+    SpeechText: ALMOST THERE
+  - SpeechAudioClip: {fileID: 8300000, guid: 25965ab7343c7aa4da5832e282dc00e0, type: 3}
+    SpeechText: YOU'RE DOING A GOOD JOB
+  - SpeechAudioClip: {fileID: 8300000, guid: d32edb9619d33534889061c58a4a0619, type: 3}
+    SpeechText: KEEP IT UP
+  - SpeechAudioClip: {fileID: 8300000, guid: 61c842348a754ec45bbdf405eba30bc6, type: 3}
+    SpeechText: THAT'S MUCH BETTER
+  - SpeechAudioClip: {fileID: 8300000, guid: 83410dc4946d8a6499e6616c87cf5ed1, type: 3}
+    SpeechText: WOW SENSATIONAL
+  - SpeechAudioClip: {fileID: 8300000, guid: 9b75809fc4fab364db98dc4ee7913472, type: 3}
+    SpeechText: SHAKE THAT BOOTY
+  PlayerEncouragementOptions:
+  - SpeechAudioClip: {fileID: 8300000, guid: 8cb72c6b589bcd548873b41ead8ae6ef, type: 3}
+    SpeechText: C'MON YOU CAN DO BETTER
+  - SpeechAudioClip: {fileID: 8300000, guid: 4a95a9839a1f46f4e9d1ac631cb95440, type: 3}
+    SpeechText: C'MON NOW, DON'T BE SHY
+  - SpeechAudioClip: {fileID: 8300000, guid: 900fcb98228b47f46962bf901f3fca4a, type: 3}
+    SpeechText: SHOW ME THOSE MOVES
+  SpeechBubbles:
+  - DisplayGameObject: {fileID: 417570476}
+    DisplayText: {fileID: 1604116636}
+    PraiseSource: {fileID: 417570480}
+  - DisplayGameObject: {fileID: 561383345}
+    DisplayText: {fileID: 1737804669}
+    PraiseSource: {fileID: 561383348}
+  BaseTalkCooldown: 2
+  CooldownRange: {x: -0.25, y: 0.25}
+  Active: 0
 --- !u!1001 &972328283
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8978,65 +9043,6 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 709457856}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1958947223
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1958947222}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fca1648b390c9b2479c7ffa9d0454022, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  HandTransform: {fileID: 272495385}
-  CommentActivationMovementThreshold: 0.05
-  TimeBeforeEncouragement: 4
-  PlayerPraiseOptions:
-  - SpeechAudioClip: {fileID: 8300000, guid: 4041c273f9d710b42ad8c16556fa3d8c, type: 3}
-    SpeechText: WELL DONE
-  - SpeechAudioClip: {fileID: 8300000, guid: d7eb857567aebd84ba671c1cefbe816d, type: 3}
-    SpeechText: AMAZING MOVES
-  - SpeechAudioClip: {fileID: 8300000, guid: b2a1b34169c8b1e469edc0b4fa90257e, type: 3}
-    SpeechText: YOU'RE A FAST LEARNER
-  - SpeechAudioClip: {fileID: 8300000, guid: cf593997256e60c46ba4db2a0354414f, type: 3}
-    SpeechText: GREAT WORK
-  - SpeechAudioClip: {fileID: 8300000, guid: 1b8bccae9dffc6043a25c923e9c03b68, type: 3}
-    SpeechText: THAT'S IT, LET YOUR HAIR DOWN
-  - SpeechAudioClip: {fileID: 8300000, guid: 96c74ad29a1a27c4c9e240ac1883023a, type: 3}
-    SpeechText: OUTSTANDING
-  - SpeechAudioClip: {fileID: 8300000, guid: 9b75809fc4fab364db98dc4ee7913472, type: 3}
-    SpeechText: SHAKE THAT BOOTY
-  - SpeechAudioClip: {fileID: 8300000, guid: dde0f8cd96a1d434c919a8720d490805, type: 3}
-    SpeechText: ALMOST THERE
-  - SpeechAudioClip: {fileID: 8300000, guid: 25965ab7343c7aa4da5832e282dc00e0, type: 3}
-    SpeechText: YOU'RE DOING A GOOD JOB
-  - SpeechAudioClip: {fileID: 8300000, guid: d32edb9619d33534889061c58a4a0619, type: 3}
-    SpeechText: KEEP IT UP
-  - SpeechAudioClip: {fileID: 8300000, guid: 61c842348a754ec45bbdf405eba30bc6, type: 3}
-    SpeechText: THAT'S MUCH BETTER
-  - SpeechAudioClip: {fileID: 8300000, guid: 83410dc4946d8a6499e6616c87cf5ed1, type: 3}
-    SpeechText: WOW SENSATIONAL
-  - SpeechAudioClip: {fileID: 8300000, guid: 9b75809fc4fab364db98dc4ee7913472, type: 3}
-    SpeechText: SHAKE THAT BOOTY
-  PlayerEncouragementOptions:
-  - SpeechAudioClip: {fileID: 8300000, guid: 8cb72c6b589bcd548873b41ead8ae6ef, type: 3}
-    SpeechText: C'MON YOU CAN DO BETTER
-  - SpeechAudioClip: {fileID: 8300000, guid: 4a95a9839a1f46f4e9d1ac631cb95440, type: 3}
-    SpeechText: C'MON NOW, DON'T BE SHY
-  - SpeechAudioClip: {fileID: 8300000, guid: 900fcb98228b47f46962bf901f3fca4a, type: 3}
-    SpeechText: SHOW ME THOSE MOVES
-  SpeechBubbles:
-  - DisplayGameObject: {fileID: 417570476}
-    DisplayText: {fileID: 1604116636}
-    PraiseSource: {fileID: 417570480}
-  - DisplayGameObject: {fileID: 561383345}
-    DisplayText: {fileID: 1737804669}
-    PraiseSource: {fileID: 561383348}
-  BaseTalkCooldown: 2
-  CooldownRange: {x: -0.25, y: 0.25}
-  Active: 0
 --- !u!114 &1958947224
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9049,6 +9055,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f5f513cc0e463647b85989aebffbb3a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Pointers: []
 --- !u!1 &1965282698
 GameObject:
   m_ObjectHideFlags: 0
